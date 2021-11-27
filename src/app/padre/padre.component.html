@@ -1,0 +1,5 @@
+<h2>Componente padre</h2>
+<div style="border:2px solid orange; padding:10px;">
+<app-hijo *ngFor = "let avisop of avisos" [aviso] ="avisop" (mensajeMarcado)="mostrarMensaje($event)"></app-hijo>
+<h3 style="text-align:center;">{{texto}}</h3>
+</div>
