@@ -44,3 +44,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Firebase
+/.firebaserc
+/firebase-debug.log
+/firebase.json
+/.firebase
+/.github
