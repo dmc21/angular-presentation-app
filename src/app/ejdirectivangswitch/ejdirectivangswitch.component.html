@@ -1,3 +1,6 @@
+<h1 class="mt-2">Ejemplo directiva *ngSwitch</h1>
+<hr>
+
 <div class="text-center">
   <ul *ngFor="let jugador of jugadores" [ngSwitch]="jugador.equipo">
     <li *ngSwitchCase="'L.A. Lakers'" class="lakers">

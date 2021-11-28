@@ -1,0 +1,85 @@
+<h1 class="mt-2">Formulario Template-Driven</h1>
+<hr />
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <h2>Añadir un nuevo cliente</h2>
+    <form #myForm="ngForm" (ngSubmit)="envio(myForm)">
+      <div class="form-group">
+        <label for="nombre">Nombre: </label>
+        <input
+          type="text"
+          class="form-control"
+          ngModel
+          name="nombre"
+          required
+          #name="ngModel"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail: </label>
+        <input
+          class="form-control"
+          name="email"
+          ngModel
+          email
+          required
+          #email="ngModel"
+        />
+        <p class="alert alert-danger" *ngIf="email.invalid && email.touched">
+          Campo incorrecto
+        </p>
+      </div>
+
+      <button type="submit" class="btn btn-success" *ngIf="myForm.valid">
+        Añadir cliente
+      </button>
+      <button
+        type="submit"
+        class="btn btn-success"
+        *ngIf="myForm.invalid"
+        disabled
+      >
+        Añadir cliente
+      </button>
+      <hr />
+      <p>Estado del formulario: {{ myForm.status }}</p>
+    </form>
+
+    <h3>Estado del campo Email</h3>
+    <hr>
+
+    <pre>
+      Estado Pristine: {{
+        myForm.controls["email"].pristine
+      }} (El usuario aún no ha modificado el campo desde su carga)
+    </pre>
+
+    <pre>
+      Estado Dirty: {{
+        myForm.controls["email"].dirty
+      }} (El usuario ha modificado el campo)
+    </pre>
+
+    <pre>
+      Estado Touched: {{
+        myForm.controls["email"].touched
+      }} (El usuario ha abandonado el campo)
+    </pre>
+
+    <pre>
+      Estado Valid: {{
+        myForm.controls["email"].valid
+      }} (Cumple la regla de validación)
+    </pre>
+
+    <pre>
+      Estado Invalid: {{
+        myForm.controls["email"].invalid
+      }} (Incumple la regla de validación)
+      </pre
+    >
+
+  
+  </div>
+</div>

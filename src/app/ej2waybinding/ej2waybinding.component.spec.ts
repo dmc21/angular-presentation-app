@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CopyrightComponent } from './copyright.component';
+import { Ej2waybindingComponent } from './ej2waybinding.component';
 
-describe('CopyrightComponent', () => {
-  let component: CopyrightComponent;
-  let fixture: ComponentFixture<CopyrightComponent>;
+describe('Ej2waybindingComponent', () => {
+  let component: Ej2waybindingComponent;
+  let fixture: ComponentFixture<Ej2waybindingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CopyrightComponent ]
+      declarations: [ Ej2waybindingComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CopyrightComponent);
+    fixture = TestBed.createComponent(Ej2waybindingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

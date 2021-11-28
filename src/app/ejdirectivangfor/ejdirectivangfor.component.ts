@@ -7,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjdirectivangforComponent implements OnInit {
 
-  cursos:string[];
+  arrayDatos: String[];
 
-
-  constructor() { 
-    this.cursos = ['Angular','HTML','CSS'];
+  constructor() {
+    this.arrayDatos = ['David', 'Antonio', 'Almería'];
   }
+
+
 
   ngOnInit() {
   }

@@ -7,7 +7,7 @@ ul {
 .lakers{
     max-width: 600px;
     height: 120px;
-    background-image: url("../../assets/lakers.png");
+    background-image: url("../../assets/basket/lakers.png");
     background-position-x: 10px;
     background-position-y: -10px;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ ul {
 .celtics{
     max-width: 600px;
     height: 120px;
-    background-image: url("../../assets/celtics.png");
+    background-image: url("../../assets/basket/celtics.png");
     background-position-x: 10px;
     background-position-y: -10px;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ ul {
 .bulls{
     max-width: 600px;
     height: 120px;
-    background-image: url("../../assets/bulls.png");
+    background-image: url("../../assets/basket/bulls.png");
     background-position-x: 10px;
     background-position-y: -5px;
     background-repeat: no-repeat;

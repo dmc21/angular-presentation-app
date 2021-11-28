@@ -1,5 +1,7 @@
-<h4>Introduzca la puntuación del alumno</h4>
+<h1 class="mt-2">Ejemplo directiva ngStyle</h1>
+<hr>
+<h4>Puntuación del Alumno</h4>
 <input type="number" class="form-control" [(ngModel)]="puntuacion">
 <hr>
-<h4 style="display: inline-block;">Puntuación obtenida:&nbsp;</h4>
-<h4 style="display: inline-block;" [ngStyle]="{color:setColor()}">{{ puntuacion }}</h4>
+<h4 style="display: inline-block;" >Puntuación obtenida: &nbsp;</h4>
+<h4 style="display: inline-block" [ngStyle]="{color:setColor()}">{{puntuacion}}</h4>

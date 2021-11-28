@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+  <a class="navbar-brand" href="#"><i class="fab fa-angular"></i></a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation"></button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+          <li class="nav-item" routerLinkActive = "active" [routerLinkActiveOptions]="{exact:true}">
+              <a class="nav-link" href="#" routerLink="/">Inicio<span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="#" routerLink="/sobre-mi" routerLinkActive = "active" >Sobre mí</a>
+          </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ejemplos
+              </a>
+              <div class="dropdown-menu bg-danger" aria-labelledby="navbarDropdown">
+                <a class="nav-link" href="#" routerLink="/interpolacionObjetos">Interpolación con objetos</a>
+                <a class="nav-link" href="#" routerLink="/propertyBinding">Property Binding</a>
+                <a class="nav-link" href="#" routerLink="/eventBinding">Event Binding</a>
+                <a class="nav-link" href="#" routerLink="/twoWayBinding">2 Way Binding</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link" href="#" routerLink="/ngIf">*ngIf</a>
+                <a class="nav-link" href="#" routerLink="/ngFor">*ngFor</a>
+                <a class="nav-link" href="#" routerLink="/ngSwitch">*ngSwitch</a>
+                <a class="nav-link" href="#" routerLink="/ngStyle">[ngStyle]</a>
+                <a class="nav-link" href="#" routerLink="/ngClass">[ngClass]</a>
+                <a class="nav-link" href="#" routerLink="/midirectiva">Mi directiva</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link" href="#" routerLink="/InputYOutput">@Input y @Output</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link" href="#" routerLink="/servicios">Servicios</a>
+                <div class="dropdown-divider"></div>
+                <a class="nav-link" href="#" routerLink="/formTemplateDriven">Template Driven Forms</a>
+                <a href="#" class="nav-link" routerLink="/formReactive">Reactive Forms</a>
+
+              </div>
+            </li>
+
+
+          <li class="nav-item">
+
+        </li>
+
+
+      </ul>
+  </div>
+</nav>

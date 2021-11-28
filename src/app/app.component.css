@@ -1,4 +1,12 @@
-.encabezado {
-    text-align: center;
-    color: blueviolet;
+.presenta{
+    transition: 1s;
+    color:rgba(10, 197, 253, 0.479);
+}
+
+.presenta:hover{
+    transition: 1s;
+    color:rgba(16, 100, 126, 0.801);
+    transform: scale(2);
+    margin-top: 20px;
+    text-decoration: underline;
 }

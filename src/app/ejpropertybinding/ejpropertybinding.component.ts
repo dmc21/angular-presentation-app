@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjpropertybindingComponent implements OnInit {
 
-texto = 'Escribe algo';
-  constructor() { 
-    
+  texto = 'Escribe algo';
+
+  constructor() {
     setTimeout(() => {
       this.texto = 'por favor';
-    },3000);
-  
-  }
+    }, 3000);
+   }
+
 
   ngOnInit() {
   }

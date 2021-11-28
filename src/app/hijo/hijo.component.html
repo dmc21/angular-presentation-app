@@ -1,5 +1,21 @@
-<div style="border: 2px solid blue; margin:10px; padding:20px;">
-<h4 [ngClass]="{tachado: leido == true}" style="display:inline;">{{aviso}}</h4>
-<button *ngIf ="leido == false" class="btn btn-success pull-right" (click)="marcar(); detectar($event)">Marcar como leido</button>
-<button *ngIf ="leido == true" class="btn btn-danger pull-right" (click)="marcar()">Desmarcar como leido</button>
+<!-- <h4>{{aviso}}</h4> -->
+
+<div style="border:2px solid blue; padding: 20px; margin: 10px">
+  <h4 [ngClass]="{ tachado: leido == true }" style="display:inline">
+    {{ aviso }}
+  </h4>
+  <button
+    *ngIf="leido == false"
+    class="btn btn-success float-md-right"
+    (click)="marcar(); detectar()"
+  >
+    Marcar como leído
+  </button>
+  <button
+    *ngIf="leido == true"
+    class="btn btn-danger float-md-right"
+    (click)="marcar();"
+  >
+    Desmarcar como leído
+  </button>
 </div>

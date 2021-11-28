@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjeventbindingComponent implements OnInit {
 
-  texto = 'Originalmente el texto se carga así';
-
-  modTexto(){
-    this.texto = 'Al pulsar el botón el texto se muestra así';
-  }
-
   constructor() { }
+
+  texto = 'Hola soy un texto por defecto, pero si pulsas el botón cambiará mi contenido';
+
+  modText() {
+    this.texto = 'Me cambiaron de valor';
+  }
 
   ngOnInit() {
   }

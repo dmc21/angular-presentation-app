@@ -1,4 +1,4 @@
-import { Component, OnInit, Input,EventEmitter, Output } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core'; /*1*/
 
 @Component({
   selector: 'app-hijo',
@@ -6,28 +6,25 @@ import { Component, OnInit, Input,EventEmitter, Output } from '@angular/core';
   styleUrls: ['./hijo.component.css']
 })
 export class HijoComponent implements OnInit {
-  
 
   constructor() { }
 
-  ngOnInit() {
+  @Input() aviso: String = ""; /*2*/
 
-  }
+  @Output() mensajeMarcado = new EventEmitter(); /*3*/
 
-  @Input() aviso:string;
+  leido: Boolean = false;
 
-  leido:boolean = false;
-  mensaje: string;
-
-  marcar(event){
+  marcar() { /*4*/
     this.leido = !this.leido;
   }
 
-  @Output() mensajeMarcado = new EventEmitter();
-
-  detectar(event){
-    this.mensaje = this.aviso;
-    this.mensajeMarcado.emit(this.mensaje);
+  detectar() { /*5*/
+    this.mensajeMarcado.emit(this.aviso);
   }
 
+  ngOnInit() {
+  }
 }
+
+

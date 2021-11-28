@@ -7,13 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjdirectivangstyleComponent implements OnInit {
 
-  puntuacion:number;
-
-  setColor(){
-    return this.puntuacion >= 5 ?'green':'red';
-  }
-
   constructor() { }
+
+  puntuacion: number = 0;
+
+  setColor() {
+    let devuelve: String = '';
+
+      if (this.puntuacion >= 5) {
+        devuelve = 'green';
+      } else { devuelve = 'red'; }
+
+      return devuelve;
+
+  }
 
   ngOnInit() {
   }

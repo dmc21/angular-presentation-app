@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArrayobjetosComponent } from './arrayobjetos.component';
+import { LateralAngularCliComponent } from './lateral-angular-cli.component';
 
-describe('ArrayobjetosComponent', () => {
-  let component: ArrayobjetosComponent;
-  let fixture: ComponentFixture<ArrayobjetosComponent>;
+describe('LateralAngularCliComponent', () => {
+  let component: LateralAngularCliComponent;
+  let fixture: ComponentFixture<LateralAngularCliComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ArrayobjetosComponent ]
+      declarations: [ LateralAngularCliComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ArrayobjetosComponent);
+    fixture = TestBed.createComponent(LateralAngularCliComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

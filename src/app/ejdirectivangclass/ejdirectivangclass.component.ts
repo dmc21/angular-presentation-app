@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EjdirectivangclassComponent implements OnInit {
 
-  puntuacion:number;
-
   constructor() { }
+
+  puntuacion: number = 0;
 
   ngOnInit() {
   }

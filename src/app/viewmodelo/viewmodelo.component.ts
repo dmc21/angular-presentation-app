@@ -8,11 +8,13 @@ import { Alumno } from '../modelos/alumno.modelo';
 })
 export class ViewmodeloComponent implements OnInit {
 
-  alumno1 = new Alumno( 1,'Juan','Gutierrez','Madrid');
-
   constructor() { }
+
+  alumno1 = new Alumno (1, 'David', 'Mora Cáceres', 'Almería');
 
   ngOnInit() {
   }
 
 }
+
+

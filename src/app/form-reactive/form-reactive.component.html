@@ -1,0 +1,30 @@
+<div class="container">
+  <h1>Formulario Reactive</h1>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Añadir nuevo cliente</h2>
+      <form [formGroup]="clienteForm" (ngSubmit)="envio()">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" class="form-control" formControlName="nombre">
+          <label for="apellidos">Apellidos:</label>
+          <input type="text" id="apellidos" class="form-control" formControlName="apellidos">
+          <label for="email">E-mail:</label>
+          <input type="text" id="email" class="form-control" formControlName="email">
+          <label for="ciudad">Ciudad: </label>
+          <select id="ciudad" class="form-control" formControlName="ciudad">
+            <option value="Huelva">Huelva</option>
+            <option value="Almería">Almería</option>
+          </select>
+          <button class="btn btn-primary mt-2" type="submit" *ngIf="clienteForm.valid">Alta de cliente</button>
+        </div>
+        {{ cliente | json }}
+        <h5>Estado del formulario: {{ clienteForm.status }}</h5>
+        <div class="alert alert-danger" role="alert" *ngIf="clienteForm.invalid">
+          Todos los campos son obligatorios
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
